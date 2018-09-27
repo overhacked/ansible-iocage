@@ -465,7 +465,7 @@ def main():
             clone_from   = dict(default="", required=False),
             release      = dict(default="", required=False),
             update       = dict(default="", required=False),
-            components   = dict(default="", aliases=["files","component"], required=False, type='list')),
+            components   = dict(default=[], aliases=["files","component"], required=False, type='list')),
         supports_check_mode = True
     )
 
